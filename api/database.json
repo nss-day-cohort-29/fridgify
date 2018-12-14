@@ -1,0 +1,22 @@
+{
+  "fridge": [
+    {
+      "name": "severed toad head",
+      "expiration": "12/25/2018",
+      "type": "reptile meat",
+      "id": 1
+    },
+    {
+      "name": "broccoli",
+      "expiration": "01/01/2019",
+      "type": "vegetable",
+      "id": 2
+    },
+    {
+      "name": "mashed potatoes",
+      "expiration": "01/01/2017",
+      "type": "blob",
+      "id": 3
+    }
+  ]
+}
