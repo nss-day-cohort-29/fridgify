@@ -13,7 +13,7 @@ const foodList = {
     .then(allFoods => {
 
       // An empty document fragment
-      let foodDocFragment = document.createDocumentFragment();
+      let foodDocFragment = document.createDocumentFragment()
 
       // 2. Iterate over data and build HTML for each item
       // We loop over the array of objects returned from our API and for each obect, we make a call to the foodBuilder method in the food module. This method takes a food object as an argument and returns an HTML component. Once we have that HTML, we append it to our document fragment so that it is slowly built up. By the end of the forEach loop, our document fragment contains all the HTML for all our data.
