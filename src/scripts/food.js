@@ -1,3 +1,6 @@
+import foodCollection from "./foodCollection"
+import foodList from "./foodList"
+
 //Given a single food object, this component builds out the HTML and returns it
 const food = {
 
@@ -28,9 +31,22 @@ const food = {
     let foodType = document.createElement("p")
     foodType.textContent = foodObject.type
 
+    let deleteFoodButton = document.createElement("button")
+    deleteFoodButton.textContent = "Delete"
+    // In order to have the id of the food item available when the user clicks on the delete button, we are the id of the HTML button element to contain the id of the item in the API. We are intentionally planning ahead and formating the id this way so that when the button is clicked, we can use the split method for strings to get just the id number of the food item to be deleted.
+    deleteFoodButton.setAttribute("id", `food--${foodObject.id}`)
+    deleteFoodButton.addEventListener("click", () => {
+      let foodId = event.target.id.split("--")[1]
+      foodCollection.deleteFood(foodId)
+      .then(response => {
+        foodList.fridgify()
+      })
+    })
+
     foodArticle.appendChild(foodName)
     foodArticle.appendChild(foodExp)
     foodArticle.appendChild(foodType)
+    foodArticle.appendChild(deleteFoodButton)
 
     return foodArticle
   }

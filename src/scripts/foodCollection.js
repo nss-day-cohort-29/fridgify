@@ -17,6 +17,15 @@ const foodCollection = {
       },
       body: JSON.stringify(newFoodToSave)
     })
+  },
+  // In order to delete a item from the JSON Server API, all we need is the id of the item in order to target it, which is the only argument this method has.
+  deleteFood(foodId) {
+    return fetch(`http://localhost:8088/fridge/${foodId}`, {
+      method: "DELETE",
+      headers: {
+          "Content-Type": "application/json"
+      }
+    })
   }
 }
 
