@@ -26,6 +26,21 @@ const foodCollection = {
           "Content-Type": "application/json"
       }
     })
+  },
+  // Again, you need the id of the food item in order to get data for that item back from the API.
+  getFood(foodId) {
+    return fetch(`http://localhost:8088/fridge/${foodId}`)
+    .then(response => response.json())
+  },
+  // In order to edit an existing food item, we need the id to identify which food item we want to edit and the new data we want to replace the existing data with. So this time, we have two arguments for the method.
+  putExistingFood(foodId, foodToEdit) {
+    return fetch(`http://localhost:8088/fridge/${foodId}`, {
+      method: "PUT",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(foodToEdit)
+    })
   }
 }
 
