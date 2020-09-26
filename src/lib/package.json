@@ -24,6 +24,7 @@
     "nss-domcomponent": "^0.1.0"
   },
   "dependencies": {
+    "coffeescript": "^2.5.1",
     "normalize.css": "^8.0.1"
   }
 }
