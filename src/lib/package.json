@@ -30,6 +30,6 @@
     "mem": "^1.1.0",
     "normalize.css": "^8.0.1",
     "showdown": "^1.8.6",
-    "yargs-parser": "^8.1.0"
+    "yargs-parser": "^13.1.2"
   }
 }
