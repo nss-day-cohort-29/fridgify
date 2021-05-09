@@ -27,7 +27,7 @@
     "coffeescript": "^2.5.1",
     "ecstatic": "^3.3.2",
     "lodash": "^4.17.21",
-    "mem": "^1.1.0",
+    "mem": "^4.0.0",
     "normalize.css": "^8.0.1",
     "showdown": "^1.8.6",
     "yargs-parser": "^8.1.0"
