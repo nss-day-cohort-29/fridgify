@@ -29,7 +29,7 @@
     "lodash": "^4.17.21",
     "mem": "^4.0.0",
     "normalize.css": "^8.0.1",
-    "showdown": "^1.8.6",
+    "showdown": "^1.9.1",
     "yargs-parser": "^13.1.2"
   }
 }
