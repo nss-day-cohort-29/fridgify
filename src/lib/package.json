@@ -1,7 +1,7 @@
 {
-  "name": "nss-modular-application",
-  "version": "1.0.0",
-  "description": "",
+  "name": "nss-modular-application-fridgify",
+  "version": "1.0.1",
+  "description": "Nov 2023",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
